@@ -1,0 +1,88 @@
+Use the <script> tag to load the ClerkJS package from our CDN.
+Use the following tabs to choose your preferred method.
+
+NPM module
+<script>
+Add the SDK using a <script> tag
+This <script> tag will load Clerk's JavaScript SDK from our CDN and initialize it with your Clerk Publishable Key and Frontend API URL. It should be placed before any other <script> tags that use the JavaScript SDK.
+
+In the Clerk Dashboard, navigate to the API keys page.
+In the Quick Copy section, select JavaScript from the dropdown menu.
+Copy the <script> tag and paste it into your HTML file, as shown in the following example:
+index.html
+
+My Application
+
+My Application
+
+<!-- Rest of your HTML file -->
+
+<script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_bGl2ZS1kb2UtMS5jbGVyay5hY2NvdW50cy5kZXYk"
+  src="https://live-doe-1.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+Listen for the load event
+Below the <script> tag that initializes the SDK, create another <script> tag that listens for the load event and call Clerk's load() method to load the SDK, as shown in the following example:
+
+index.html
+
+<!-- Rest of your HTML file -->
+
+<script>
+  window.addEventListener('load', async function () {
+    await Clerk.load()
+
+    console.log('ClerkJS is loaded')
+  })
+</script>
+Allow users to sign in or out
+Clerk's prebuilt components are the easiest way to add authentication and user management to your app. They come styled out-of-the-box and are customizable to fit your app's design.
+
+To get started, you will use:
+
+<SignIn />: renders a user interface for signing in.
+<UserButton />: Shows the signed-in user's avatar. Selecting it opens a dropdown menu with account management options.
+index.html
+
+My Application
+
+My Application
+
+<div id="app"></div>
+
+<!-- Initialize Clerk with your
+Clerk Publishable Key and Frontend API URL -->
+<script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_bGl2ZS1kb2UtMS5jbGVyay5hY2NvdW50cy5kZXYk"
+  src="https://live-doe-1.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+
+<script>
+  window.addEventListener('load', async function () {
+    await Clerk.load()
+
+    if (Clerk.user) {
+      document.getElementById('app').innerHTML = `
+        <div id="user-button"></div>
+      `
+
+      const userButtonDiv = document.getElementById('user-button')
+
+      Clerk.mountUserButton(userButtonDiv)
+    } else {
+      document.getElementById('app').innerHTML = `
+        <div id="sign-in"></div>
+      `
+
+      const signInDiv = document.getElementById('sign-in')
+
+      Clerk.mountSignIn(signInDiv)
+    }
+  })
+</script>

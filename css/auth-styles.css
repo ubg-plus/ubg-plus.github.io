@@ -1,0 +1,108 @@
+
+/* Authentication UI Styles */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.auth-title {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.auth-message {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.auth-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.auth-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.user-profile:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clerk component styling */
+.cl-internal-b3fm6y {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 12px !important;
+}
+
+.cl-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
