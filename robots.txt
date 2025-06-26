@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-Sitemap: https://unblockedgames.cloud/site_map.xml
+Sitemap: https://unblockedgamesgplus.gitlab.io/site_map.xml

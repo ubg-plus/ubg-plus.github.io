@@ -26,7 +26,7 @@ function replaceInFile(filePath) {
         
         // The specific text to replace
         const oldDomain = "githuubiogames.github.io";
-const newDomain = "unblockedgames.cloud";
+const newDomain = "unblockedgamesgplus.gitlab.io";
         
         if (content.includes(oldDomain)) {
             content = content.replace(new RegExp(oldDomain, 'g'), newDomain);
