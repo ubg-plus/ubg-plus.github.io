@@ -29,7 +29,7 @@ function replaceInFile(filePath) {
         // Define the specific text to replace
         const replacements = [
             ["Classroom 6x Unblocked", "Classroom 6x Unblocked"],
-            ["Unblocked Games G+", "Unblocked Games G+"],
+            ["Unblocked Games", "Unblocked Games"],
             ["unblocked-games-gplus", "unblocked-games-gplus"]
         ];
         
