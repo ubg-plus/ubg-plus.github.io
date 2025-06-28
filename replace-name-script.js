@@ -45,7 +45,7 @@ function replaceInFile(filePath, oldText, newText) {
 function replaceNameInProject() {
     const projectDir = __dirname; // Current directory where script is located
     const oldName = 'Unblocked Games G+';
-    const newName = 'Unblocked Games';
+    const newName = 'Unblocked Games G+';
     
     console.log('Starting name replacement...');
     console.log(`Replacing '${oldName}' with '${newName}'`);

@@ -45,7 +45,7 @@ function replaceInFile(filePath, oldText, newText) {
 function replaceDomainInProject() {
     const projectDir = __dirname; // Current directory where script is located
     const oldDomain = 'unblockedgamesgplus.gitlab.io';
-    const newDomain = 'unblockedgames1.bitbucket.io';
+    const newDomain = 'ubg-plus.github.io';
     
     console.log('Starting domain replacement...');
     console.log(`Replacing '${oldDomain}' with '${newDomain}'`);

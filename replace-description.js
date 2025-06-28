@@ -26,7 +26,7 @@ function replaceInFile(filePath) {
         
         // The specific text to replace
         const oldText = "Discover Classroom 6x, the ultimate unblocked games website for kids! Play hundreds of free online games instantly with no downloads required. Fun gaming for everyone at githuubiogames.github.io! We offers exciting free games you can play anywhere - even at school! Racing, puzzles, adventures & more at githuubiogames.github.io.";
-const newText = "Discover Unblocked Games, the ultimate unblocked games website for kids! Play hundreds of free online games instantly with no downloads required. Fun gaming for everyone at unblockedgames1.bitbucket.io! We offers exciting free games you can play anywhere - even at school! Racing, puzzles, adventures & more at unblockedgames1.bitbucket.io.";
+const newText = "Discover Unblocked Games G+, the ultimate unblocked games website for kids! Play hundreds of free online games instantly with no downloads required. Fun gaming for everyone at ubg-plus.github.io! We offers exciting free games you can play anywhere - even at school! Racing, puzzles, adventures & more at ubg-plus.github.io.";
         
         if (content.includes(oldText)) {
             content = content.replace(new RegExp(oldText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), newText);

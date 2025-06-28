@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-Sitemap: https://unblockedgames1.bitbucket.io/site_map.xml
+Sitemap: https://ubg-plus.github.io/site_map.xml
